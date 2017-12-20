@@ -1,0 +1,8 @@
+
+var app = angular.module('DocManagerApp', ['ngRoute','ngResource']);
+
+app.controller("DocCtrl",['$scope','$http','$rootScope','$log',
+       function($scope,$http,$rootScope,$log){
+	$log.info("Inside Doc controller");
+	
+}]);

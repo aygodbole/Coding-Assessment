@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package org.test.document.config;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public class AppConfig {
+
+}

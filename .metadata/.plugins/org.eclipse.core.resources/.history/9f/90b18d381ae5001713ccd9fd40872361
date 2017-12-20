@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+package org.test.document.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages="org.springtest")
+public class AppConfig extends WebMvcConfigurerAdapter {
+
+	/**
+	 * 
+	 */
+	public AppConfig() {
+		// TODO Auto-generated constructor stub
+	}
+	@Bean
+	 ViewResolver viewResolver(){
+		
+		 InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+			viewResolver.setViewClass(JstlView.class);
+			viewResolver.setPrefix("/views");
+			viewResolver.setSuffix("");
+
+			return viewResolver;
+	}
+	@Override
+	public void configureDefaultServletHandling(
+			DefaultServletHandlerConfigurer configurer) {
+		// TODO Auto-generated method stub
+		super.configureDefaultServletHandling(configurer);
+		
+	}
+
+}

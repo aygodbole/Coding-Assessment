@@ -1,0 +1,21 @@
+1513726548066	Delete element
+1513726838210	Delete element
+1513726921346	Rename package 'org.test.document'
+1513732052675	Delete element
+1513732171838	Rename resource 'index.html'
+1513733009453	Delete element
+1513734417558	Move 'index.jsp' to 'views'
+1513739305250	Encapsulate field 'docType'
+1513739309708	Encapsulate field 'docContent'
+1513739855196	Move 'views' to 'resource'
+1513739867897	Move 'css' to 'resource'
+1513739871077	Move 'fonts' to 'resource'
+1513739875111	Move 'lib' to 'resource'
+1513739884810	Rename resource 'lib'
+1513739893700	Delete element
+1513739897102	Delete element
+1513739913235	Delete elements
+1513739922335	Delete elements
+1513739930759	Move 'app.js' to 'js'
+1513741235406	Rename resource 'resource'
+1513753576125	Delete elements

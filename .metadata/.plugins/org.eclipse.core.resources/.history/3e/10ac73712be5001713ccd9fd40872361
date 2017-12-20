@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package org.test.document.controller;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public class DocMgmtController {
+
+	/**
+	 * 
+	 */
+	public DocMgmtController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

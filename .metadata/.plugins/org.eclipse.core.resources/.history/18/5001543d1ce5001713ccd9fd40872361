@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package org.test.document.service.impl;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public class DocumentServiceImpl {
+
+	/**
+	 * 
+	 */
+	public DocumentServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

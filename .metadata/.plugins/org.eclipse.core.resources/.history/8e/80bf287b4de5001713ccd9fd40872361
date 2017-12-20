@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+<body ng-app ="DocManagerApp">
+<div ng-controller = "DocCtrl">
+<h1>{{name}} </h1>
+
+
+FileUpload : 
+<input id="fileAttUpload" type="file" file-model = "myFile">
+<button ng-click = "saveAttachments();">upload me</button>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/jquery.min.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath() %>/resources/js/angular.min.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath() %>/resources/js/angular-route.min.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath() %>/resources/js/angular-resource.min.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath() %>/resources/js/app.js'></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js'></script>-->
+</body>
+</html>

@@ -1,0 +1,86 @@
+/**
+ * 
+ */
+package org.test.document.beans;
+
+import java.io.File;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public class Document {
+	
+	public Document(){
+		super();
+	}
+
+	/**
+	 * 
+	 */
+	public Document(String userId, int docId, String userName) {
+		super();
+		this.userId = userId;
+		this.docId = docId;
+		this.userName = userName;
+	}
+	private String userId; 
+	private int docId; 
+	private String userName;
+	private byte[] docContent;
+	private String docType; 
+	/**
+	 * @return the userId
+	 */
+	public String getUserId() {
+		return userId;
+	}
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	/**
+	 * @return the docId
+	 */
+	public int getDocId() {
+		return docId;
+	}
+	/**
+	 * @param docId the docId to set
+	 */
+	public void setDocId(int docId) {
+		this.docId = docId;
+	}
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getDocType() {
+		return docType;
+	}
+
+	public void setDocType(String docType) {
+		this.docType = docType;
+	}
+
+	public byte[] getDocContent() {
+		return docContent;
+	}
+
+	public void setDocContent(byte[] docContent) {
+		this.docContent = docContent;
+	}
+	
+	
+}

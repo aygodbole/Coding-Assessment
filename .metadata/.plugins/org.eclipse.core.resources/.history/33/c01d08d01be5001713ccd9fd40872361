@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package org.test.document.service;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public interface DocumentService {
+
+}

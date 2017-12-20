@@ -1,0 +1,61 @@
+var app = angular.module('DocManagerApp', [ 'ngRoute', 'ngResource' ]);
+
+app.controller("DocCtrl", [ '$scope', '$http', '$rootScope', '$log','$timeout',
+		function($scope, $http, $rootScope, $log, $timeout) {
+			$log.info("Inside Doc controller");
+			$scope.disableContinue = true;
+
+			$scope.saveAttachments = function(){
+				$log.info("Inside save attachment");
+				var fd = new FormData();
+				fd.append("file",$scope.myFile);
+				    $http.post("/upload", fd, {
+				           transformRequest: angular.identity,
+				           headers: {'Content-Type': undefined,
+				           	'enctype' :'multipart/form-data'}
+				       }).success(function(results){
+				       	// console.log("response : _>",results);
+				       	$scope.showPreLoader = false;
+				if(results.STATUS=='SUCCESS'){
+					$log.info("SUCCESS");
+				}else {
+				$scope.errorMessage = "Error in saving the Attachments";
+				 }
+				})
+				   .error(function(data,status){
+				   	$scope.showPreLoader = false;
+				   	$scope.errorMessage = "Error in saving the Attachments";
+				   });
+				};
+				
+			$scope.clickUpload = function() {
+				$timeout(function() {
+					angular.element('#fileAttUpload').trigger('click');
+				});
+			};
+			
+			$scope.onFileSelect = function($files) {
+				$timeout(function() {
+					$scope.fileAttUpload = angular.element($files).val();
+					$scope.file = $files.files[0];
+					$scope.disableContinue = false;
+				});
+			};
+
+		} ]);
+
+app.directive('fileModel', ['$parse', function ($parse) {
+    return {
+       restrict: 'A',
+       link: function(scope, element, attrs) {
+          var model = $parse(attrs.fileModel);
+          var modelSetter = model.assign;
+          
+          element.bind('change', function(){
+             scope.$apply(function(){
+                modelSetter(scope, element[0].files[0]);
+             });
+          });
+       }
+    };
+ }]);

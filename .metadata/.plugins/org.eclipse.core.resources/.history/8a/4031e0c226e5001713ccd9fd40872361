@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+ <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/angular.min.js"></script>
+    <script type="text/javascript" src="/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app ="DocManagerApp">
+<div ng-controller = "DocCtrl">
+<h1>{{name}} </h1>
+</div>
+
+</body>
+</html>

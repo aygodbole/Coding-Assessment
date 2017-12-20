@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package org.test.document.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+@Configuration
+@ComponentScan(basePackages="org.test.document.controller")
+public class AppConfig {
+	
+}

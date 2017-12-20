@@ -1,0 +1,92 @@
+/**
+ * 
+ */
+package org.test.document.beans;
+
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public class Document {
+	
+	public Document(){
+		super();
+	}
+	
+	/**
+	 * @param docName
+	 * @param docId
+	 * @param userName
+	 * @param docContent
+	 * @param docType
+	 */
+	public Document(String docName, int docId, String userName,
+			byte[] docContent, String docType) {
+		super();
+		this.docName = docName;
+		this.docId = docId;
+		this.userName = userName;
+		this.docContent = docContent;
+		this.docType = docType;
+	}
+	private String docName; 
+	private int docId; 
+	private String userName;
+	private byte[] docContent;
+	private String docType; 
+	
+	
+	/**
+	 * @return the docName
+	 */
+	public String getDocName() {
+		return docName;
+	}
+	/**
+	 * @param docName the docName to set
+	 */
+	public void setDocName(String docName) {
+		this.docName = docName;
+	}
+	/**
+	 * @return the docId
+	 */
+	public int getDocId() {
+		return docId;
+	}
+	/**
+	 * @param docId the docId to set
+	 */
+	public void setDocId(int docId) {
+		this.docId = docId;
+	}
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getDocType() {
+		return docType;
+	}
+
+	public void setDocType(String docType) {
+		this.docType = docType;
+	}
+
+	public byte[] getDocContent() {
+		return docContent;
+	}
+
+	public void setDocContent(byte[] docContent) {
+		this.docContent = docContent;
+	}
+}

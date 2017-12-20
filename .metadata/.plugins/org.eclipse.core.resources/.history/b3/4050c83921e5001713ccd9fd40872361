@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+
+var app = angular.module("ContactApp");
+app.controller("DocCtrl", DocCtrl);
+function DocCtrl($scope){
+	$scope.name = "Aaditi";
+}

@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package org.test.document.beans;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public class Document {
+
+	/**
+	 * 
+	 */
+	public Document() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

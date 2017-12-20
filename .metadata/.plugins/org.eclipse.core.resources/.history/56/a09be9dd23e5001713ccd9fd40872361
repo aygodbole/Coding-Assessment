@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+
+var app = angular.module("DocManagerApp");
+app.controller("DocCtrl", DocCtrl);
+function DocCtrl($scope){
+	$scope.name = "Aaditi";
+}

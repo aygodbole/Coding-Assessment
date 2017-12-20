@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package org.test.document.dao;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public class DocumentDAO {
+
+	/**
+	 * 
+	 */
+	public DocumentDAO() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

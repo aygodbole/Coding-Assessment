@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package org.test.document.config;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public class AppConfig {
+
+}

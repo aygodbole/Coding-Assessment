@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package org.test.document.service;
+
+import java.io.File;
+import java.util.Map;
+
+import org.test.document.beans.Document;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public interface DocumentService {
+	
+	public Map uploadDocument(Document doc);
+	public File retrieveDocument(String userId);
+	
+}

@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package org.test.document.dao;
+
+import java.util.HashMap;
+
+import org.test.document.beans.Document;
+
+/**
+ * @author Tejas Joshi
+ *
+ */
+public class DocumentDAO {
+	
+
+	public HashMap<String, String> uploadDocument(Document doc) {
+		//Save document bean into table
+		return null;
+		// TODO Auto-generated method stub
+		
+	}
+
+}

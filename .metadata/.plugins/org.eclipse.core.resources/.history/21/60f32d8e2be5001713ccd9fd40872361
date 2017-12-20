@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package org.test.document.service;
+
+import java.io.File;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public interface DocumentService {
+	
+	public String uploadDocument(File doc , String userId, String docType);
+	public File retrieveDocument(String userId);
+	
+}

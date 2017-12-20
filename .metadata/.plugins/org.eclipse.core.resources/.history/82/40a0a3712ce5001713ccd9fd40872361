@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package org.test.document.service.impl;
+
+import java.io.File;
+
+import org.test.document.service.DocumentService;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public class DocumentServiceImpl  implements DocumentService{
+
+	public String uploadDocument(Document doc) {
+		// TODO Auto-generated method stub
+		return userId;
+	}
+
+	public File retrieveDocument(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

@@ -1,0 +1,20 @@
+var app = angular.module('DocManagerApp', [ 'ngRoute', 'ngResource' ]);
+
+app.controller("DocCtrl", [ '$scope', '$http', '$rootScope', '$log',
+		function($scope, $http, $rootScope, $log) {
+			$log.info("Inside Doc controller");
+
+			$scope.clickUpload = function() {
+				$timeout(function() {
+					angular.element('#fileAttUpload').trigger('click');
+				});
+			};
+			$scope.onFileSelect = function($files) {
+				$timeout(function() {
+					$scope.fileAttUpload = angular.element($files).val();
+					$scope.file = $files.files[0];
+					$scope.disableContinue = false;
+				});
+			};
+
+		} ]);

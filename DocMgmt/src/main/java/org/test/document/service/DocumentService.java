@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package org.test.document.service;
+
+import java.io.File;
+import java.util.HashMap;
+
+import org.test.document.beans.Document;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public interface DocumentService {
+	
+	public HashMap<String, String> uploadDocument(Document doc);
+	public File retrieveDocument(String userId);
+	
+}

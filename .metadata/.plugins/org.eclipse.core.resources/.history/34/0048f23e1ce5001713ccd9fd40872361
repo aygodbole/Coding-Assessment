@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package org.test.document.service;
+
+/**
+ * @author Aaditi Godbole
+ *
+ */
+public interface DocumentService {
+
+}
